@@ -4,7 +4,7 @@
 typeset -A REPO_MAP
 REPO_MAP=(
   i "hslu-intro-qc"
-  d "devices"
+  c "config"
   p "hslu-pcp"
   n "notes"
 )

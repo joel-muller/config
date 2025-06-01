@@ -31,7 +31,7 @@ export PATH="$PATH:/Users/joeldevelop/.local/bin"
 
 # Declare the Functions for opening things fast
 web() {
-    python3 $HOME/devices/automation_scripts/website_opener.py $1
+    zsh $HOME/config/automation_scripts/open.zsh $1
 }
 
 app() {
