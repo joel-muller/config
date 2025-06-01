@@ -1,0 +1,15 @@
+visual-studio-code
+spotify
+brave-browser
+discord
+rectangle
+zoom
+docker
+anki
+firefox
+libreoffice
+intellij-idea-ce
+pdfsam-basic
+qbittorrent
+vlc
+protonvpn
