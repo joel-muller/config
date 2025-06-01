@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PATH_OF_DOTFILES=$HOME/devices/dotfiles
+PATH_OF_DOTFILES=$HOME/config/dotfiles
 ANTIGEN_PATH=$HOME/antigen.zsh
 ANTIGEN_REPO=$HOME/.antigen
 

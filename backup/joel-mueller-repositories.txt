@@ -1,6 +1,6 @@
 git@github.com:joel-muller/Baloons.git
 git@github.com:joel-muller/Countries.git
-git@github.com:joel-muller/devices.git
+git@github.com:joel-muller/config.git
 git@github.com:joel-muller/Free_Fall.git
 git@github.com:joel-muller/hslu-ad.git
 git@github.com:joel-muller/hslu-adml.git

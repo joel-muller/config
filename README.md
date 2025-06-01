@@ -9,7 +9,7 @@
 ## Backup the Repositories
 
 ```shell
-curl https://raw.githubusercontent.com/joel-mueller/config/refs/heads/main/backup/backup_repositories.sh | sh
+curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/backup/backup_repositories.sh | sh
 ```
 
 ## Setting Up Ubuntu Machine
@@ -17,7 +17,7 @@ curl https://raw.githubusercontent.com/joel-mueller/config/refs/heads/main/backu
 ### Add gitconfig
 
 ```shell
-curl https://raw.githubusercontent.com/joel-mueller/config/refs/heads/main/gitconfig.txt > $HOME/.gitconfig
+curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/gitconfig.txt > $HOME/.gitconfig
 ```
 
 Change the variables to your need
@@ -25,7 +25,7 @@ Change the variables to your need
 ### Install Important Packages
 
 ```shell
-curl https://raw.githubusercontent.com/joel-mueller/config/refs/heads/main/apt/install.sh | sh
+curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/install.sh | sh
 ```
 
 > Note: Reload the terminal afterwards, zsh should now be your default terminal, with `echo $SHELL` you see is you run bash or zsh
