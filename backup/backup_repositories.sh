@@ -8,7 +8,7 @@ mkdir "$backup_dir"
 echo "Create backup dir"
 cd "$backup_dir" || exit 1
 
-curl https://raw.githubusercontent.com/joel-mueller/devices/refs/heads/main/backup/joel-mueller-repositories.txt | xargs -I {} git clone --mirror {}
+curl https://raw.githubusercontent.com/joel-muller/devices/refs/heads/main/backup/joel-mueller-repositories.txt | xargs -I {} git clone --mirror {}
 
 cd || exit
 
