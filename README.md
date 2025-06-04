@@ -33,7 +33,7 @@ curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/in
 ### Create SSH Key
 
 ```shell
-ssh-keygen -t rsa -b 4096 -C "mymail"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 - Then add the public key to the github account

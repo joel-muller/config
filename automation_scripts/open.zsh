@@ -7,6 +7,7 @@ REPO_MAP=(
   c "config"
   p "hslu-pcp"
   n "notes"
+  pe "hslu-pcp-exercise"
 )
 
 typeset -A WEBSITES
