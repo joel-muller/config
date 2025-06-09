@@ -9,6 +9,8 @@ set clipboard=unnamed
 
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
+nnoremap <C-y> <C-y>k
+nnoremap <C-e> <C-e>j
 
 noremap H ^
 noremap L $

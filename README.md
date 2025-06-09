@@ -1,10 +1,4 @@
-# DeviceToolkit
-
-## TODO
-
-- [ ] Solve web opener better
-- [ ] Write a application opener for `app brave`
-- [ ] Remove useless homebrew formulas and add only the essential to it, maybe also let the file be given with like `install_formulas essentials.txt`
+# config
 
 ## Backup the Repositories
 
@@ -28,7 +22,8 @@ Change the variables to your need
 curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/install.sh | sh
 ```
 
-> Note: Reload the terminal afterwards, zsh should now be your default terminal, with `echo $SHELL` you see is you run bash or zsh
+> [!NOTE]
+> Reload the terminal afterwards, zsh should now be your default terminal, with `echo $SHELL` you see is you run bash or zsh, if this doesn't work, try to restart the computer
 
 ### Create SSH Key
 
@@ -46,4 +41,11 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ./install_dotfiles.sh
 ```
 
-> Note: Reload the terminal afterwards, all the dotfiles should be linked afterwards
+> [!NOTE]
+> Reload the terminal afterwards, all the dotfiles should be linked afterwards
+
+## TODO
+
+- [ ] Solve web opener better
+- [ ] Write a application opener for `app brave`
+- [ ] Remove useless homebrew formulas and add only the essential to it, maybe also let the file be given with like `install_formulas essentials.txt`
