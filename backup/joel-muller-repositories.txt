@@ -8,6 +8,7 @@ git@github.com:joel-muller/hslu-anlis.git
 git@github.com:joel-muller/hslu-astat.git
 git@github.com:joel-muller/hslu-astatf.git
 git@github.com:joel-muller/hslu-bdm.git
+git@github.com:joel-muller/hslu-chat.git
 git@github.com:joel-muller/hslu-cobau.git
 git@github.com:joel-muller/hslu-cplab.git
 git@github.com:joel-muller/hslu-dbs.git
@@ -33,6 +34,7 @@ git@github.com:joel-muller/learning-go.git
 git@github.com:joel-muller/learning-python.git
 git@github.com:joel-muller/notes.git
 git@github.com:joel-muller/pdate.git
+git@github.com:joel-muller/scripts.git
 git@github.com:joel-muller/Scrumdinger.git
 git@github.com:joel-muller/Solve_Triangles.git
 git@github.com:joel-muller/Today.git
