@@ -8,12 +8,13 @@ REPO_MAP=(
   p "hslu-pcp"
   n "notes"
   pe "hslu-pcp-exercise"
+  s "scripts"
+  e "hslu-enlab"
 )
 
 typeset -A WEBSITES
 WEBSITES=(
   q "https://gpuhub.labservices.ch/"
-  e "https://github.com/tstangenberg/enlab-queue-fs25"
 )
 
 # Check if an alias was passed
