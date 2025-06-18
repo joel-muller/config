@@ -17,10 +17,13 @@ git@github.com:joel-muller/hslu-intro-qc.git
 git@github.com:joel-muller/hslu-lial.git
 git@github.com:joel-muller/hslu-nand-2-tetris.git
 git@github.com:joel-muller/hslu-oop.git
-git@github.com:joel-muller/hslu-pcp.git
-git@github.com:joel-muller/hslu-pcp-exercise.git
-git@github.com:joel-muller/hslu-pren-1.git
-git@github.com:joel-muller/hslu-pren-2.git
+git@github.com:joel-muller/hslu-pcp-go.git
+git@github.com:joel-muller/hslu-pcp-exercises.git
+git@github.com:joel-muller/hslu-pren-1-doc.git
+git@github.com:joel-muller/hslu-pren-1-digital-twin.git
+git@github.com:joel-muller/hslu-pren-2-doc.git
+git@github.com:joel-muller/hslu-pren-2-llc.git
+git@github.com:joel-muller/hslu-pren-2-werni.git
 git@github.com:joel-muller/hslu-swat.git
 git@github.com:joel-muller/hslu-swda.git
 git@github.com:joel-muller/hslu-usab.git

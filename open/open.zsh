@@ -3,18 +3,14 @@
 # Define associative arrays for aliases
 typeset -A REPO_MAP
 REPO_MAP=(
-  i "hslu-intro-qc"
   c "config"
-  p "hslu-pcp"
   n "notes"
-  pe "hslu-pcp-exercise"
   s "scripts"
   e "hslu-enlab"
 )
 
 typeset -A WEBSITES
 WEBSITES=(
-  q "https://gpuhub.labservices.ch/"
 )
 
 # Check if an alias was passed
