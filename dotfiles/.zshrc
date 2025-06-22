@@ -25,6 +25,7 @@ alias dc='docker compose'
 alias copy='xsel --input --clipboard'
 alias paste='xsel --output --clipboard'
 alias la='ls -lha'
+alias pdatech='pdate -f "{WD}, dr {DD} {MN} {YYYY}" -l ch'
 
 # Created by `pipx` on 2025-05-03 20:45:29
 export PATH="$PATH:/Users/joeldevelop/.local/bin"
