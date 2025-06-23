@@ -20,11 +20,12 @@ antigen theme clean
 antigen apply
 
 # Declare the Aliases
-alias d='docker'
+alias dk='docker'
 alias dc='docker compose'
 alias copy='xsel --input --clipboard'
 alias paste='xsel --output --clipboard'
-alias la='ls -lha'
+alias l='ls -lha'
+alias backup='curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/backup/backup_repositories.sh | sh'
 alias pdatech='pdate -f "{WD}, dr {DD} {MN} {YYYY}" -l ch'
 
 # Created by `pipx` on 2025-05-03 20:45:29
@@ -33,6 +34,10 @@ export PATH="$PATH:/Users/joeldevelop/.local/bin"
 # Declare the Functions for opening things fast
 web() {
     zsh $HOME/config/open/open.zsh $1
+}
+
+clone() {
+    git clone git@github.com:joel-muller/$1.git
 }
 
 app() {

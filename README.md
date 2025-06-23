@@ -1,11 +1,5 @@
 # config
 
-## Backup the Repositories
-
-```shell
-curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/backup/backup_repositories.sh | sh
-```
-
 ## Setting Up Ubuntu Machine
 
 ### Add gitconfig
