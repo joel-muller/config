@@ -47,6 +47,3 @@ app() {
 ch() {
     curl cheat.sh/$1
 }
-
-# For opening fast the study log
-alias s='vim $HOME/notes/hslu/Study_Logs.md'
