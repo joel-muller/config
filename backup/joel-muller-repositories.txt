@@ -2,6 +2,7 @@ git@github.com:joel-muller/Baloons.git
 git@github.com:joel-muller/Countries.git
 git@github.com:joel-muller/config.git
 git@github.com:joel-muller/Free_Fall.git
+git@github.com:joel-muller/dive-logs.git
 git@github.com:joel-muller/hslu-ad.git
 git@github.com:joel-muller/hslu-adml.git
 git@github.com:joel-muller/hslu-anlis.git
@@ -44,7 +45,7 @@ git@github.com:joel-muller/sonar.git
 git@github.com:joel-muller/Scrumdinger.git
 git@github.com:joel-muller/Solve_Triangles.git
 git@github.com:joel-muller/Today.git
-git@github.com:joel-muller/website.git
+git@github.com:joel-muller/homelab.git
 git@github.com:joel-muller/Your_Converter.git
 git@github.com:joel-muller/Your_Picker.git
 git@github.com:joel-muller/Your_Tip.git
