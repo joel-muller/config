@@ -16,6 +16,12 @@ Change the variables to your need
 curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/install.sh | sh
 ```
 
+### Make zsh shell standard shell
+
+```shell
+chsh -s $(which zsh)
+```
+
 > [!NOTE]
 > Reload the terminal afterwards, zsh should now be your default terminal, with `echo $SHELL` you see is you run bash or zsh, if this doesn't work, try to restart the computer
 

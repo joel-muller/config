@@ -11,7 +11,3 @@ curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/ap
 
 echo ""
 echo "Done ."
-
-echo ""
-echo "Making shell zsh shell"
-chsh -s $(which zsh)
