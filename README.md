@@ -44,8 +44,13 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 > [!NOTE]
 > Reload the terminal afterwards, all the dotfiles should be linked afterwards
 
-## TODO
+## Setting Up macOS
 
-- [ ] Solve web opener better
-- [ ] Write a application opener for `app brave`
-- [ ] Remove useless homebrew formulas and add only the essential to it, maybe also let the file be given with like `install_formulas essentials.txt`
+1. Use the same `.gitconfig` settings as on Ubuntu.
+2. Manually install required packages using Homebrew.
+3. Skip configuring Zsh as the default shell — it's already the standard shell in Terminal.
+4. SSH key creation follows the same steps as on Ubuntu.
+5. Linking dotfiles works the same way as on Ubuntu.
+
+> [!NOTE]
+> A dotfile configuration for Aerospace (similar to i3 on Ubuntu) is already available.
