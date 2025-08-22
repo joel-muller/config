@@ -3,6 +3,7 @@ git@github.com:joel-muller/Countries.git
 git@github.com:joel-muller/config.git
 git@github.com:joel-muller/Free_Fall.git
 git@github.com:joel-muller/dive-logs.git
+git@github.com:joel-muller/flight-log.git
 git@github.com:joel-muller/hslu-ad.git
 git@github.com:joel-muller/hslu-adml.git
 git@github.com:joel-muller/hslu-anlis.git
@@ -39,6 +40,7 @@ git@github.com:joel-muller/learning-c.git
 git@github.com:joel-muller/learning-go.git
 git@github.com:joel-muller/learning-python.git
 git@github.com:joel-muller/notes.git
+git@github.com:joel-muller/kickstart.nvim.git
 git@github.com:joel-muller/pdate.git
 git@github.com:joel-muller/scripts.git
 git@github.com:joel-muller/sonar.git
