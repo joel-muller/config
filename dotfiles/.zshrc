@@ -40,10 +40,6 @@ clone() {
     git clone git@github.com:joel-muller/$1.git
 }
 
-app() {
-    open /Applications.$1.app
-}
-
 ch() {
     curl cheat.sh/$1
 }

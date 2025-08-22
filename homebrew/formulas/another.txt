@@ -1,3 +1,0 @@
-mailsy
-speedtest-cli
-wifi-password
