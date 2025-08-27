@@ -42,4 +42,5 @@ echo "Creating new .config folder"
 mkdir -p "$CONFIG_FOLDER"
 
 # Copy nvim folder to config folder
+echo "Linking nvim folder to config folder"
 ln -s "$HOME/config/nvim" "$CONFIG_FOLDER"
