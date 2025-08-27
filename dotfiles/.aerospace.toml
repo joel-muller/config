@@ -185,8 +185,8 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
 
-    ctrl-b = '''exec-and-forget open -a "Brave Browser"'''
-    ctrl-t = '''exec-and-forget open -a "Terminal"'''
+    ctrl-alt-b = '''exec-and-forget open -a "Brave Browser"'''
+    ctrl-alt-t = '''exec-and-forget open -a "iTerm"'''
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
