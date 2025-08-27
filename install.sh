@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PATH_OF_DOTFILES=$HOME/config/dotfiles
+CONFIG_FOLDER=$HOME/.config
 ANTIGEN_PATH=$HOME/antigen.zsh
 ANTIGEN_REPO=$HOME/.antigen
 
@@ -10,9 +11,9 @@ if [ -f "$ANTIGEN_PATH" ]; then
     echo "Uninstall Antigen file"
 fi
 
-if [ -f "$ANTIGEN_REPO" ]; then
+if [ -d "$ANTIGEN_REPO" ]; then
     rm -rf "$ANTIGEN_REPO"
-    echo "Uninstall Antigen file"
+    echo "Uninstall Antigen repository"
 fi
 
 # Installing Antigen
@@ -30,3 +31,15 @@ ls -A $PATH_OF_DOTFILES | xargs -I {} ln -nfs $PATH_OF_DOTFILES/{} $HOME/{}
 # Linking .vimrc dotfile to a new intellij dotfile
 [ -e "$HOME/.ideavimrc" ] && rm "$HOME/.ideavimrc"
 ln -s "$HOME/.vimrc" "$HOME/.ideavimrc"
+
+# Remove .config folder if it already exists and create a new one
+if [ -d "$CONFIG_FOLDER" ]; then
+    echo "Removing existing .config folder"
+    rm -rf "$CONFIG_FOLDER"
+fi
+
+echo "Creating new .config folder"
+mkdir -p "$CONFIG_FOLDER"
+
+# Copy nvim folder to config folder
+ln -s "$HOME/config/nvim" "$CONFIG_FOLDER"
