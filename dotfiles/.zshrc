@@ -41,5 +41,5 @@ clone() {
 }
 
 ch() {
-    curl cheat.sh/$1
+    curl cheat.sh/$1 | less
 }
