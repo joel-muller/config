@@ -42,7 +42,6 @@ git@github.com:joel-muller/learning-python.git
 git@github.com:joel-muller/notes.git
 git@github.com:joel-muller/pdate.git
 git@github.com:joel-muller/scripts.git
-git@github.com:joel-muller/sonar.git
 git@github.com:joel-muller/Scrumdinger.git
 git@github.com:joel-muller/Solve_Triangles.git
 git@github.com:joel-muller/Today.git
