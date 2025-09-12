@@ -2,8 +2,6 @@
 [user]
 	name = Joel Müller
 	email = yourmail
-[alias]
-	cm = commit -m
 [init]
 	defaultBranch = main
 [core]

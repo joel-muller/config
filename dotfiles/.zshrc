@@ -27,6 +27,7 @@ alias paste='xsel --output --clipboard'
 alias l='ls -lha'
 alias backup='curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/backup/backup_repositories.sh | sh'
 alias pdatech='pdate -f "{WD}, dr {DD} {MN} {YYYY}" -l ch'
+alias sync='rsync -avz'
 
 # Created by `pipx` on 2025-05-03 20:45:29
 export PATH="$PATH:/Users/joeldevelop/.local/bin"

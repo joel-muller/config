@@ -10,6 +10,7 @@ git@github.com:joel-muller/hslu-anlis.git
 git@github.com:joel-muller/hslu-astat.git
 git@github.com:joel-muller/hslu-astatf.git
 git@github.com:joel-muller/hslu-bdm.git
+git@github.com:joel-muller/hslu-baa-doc.git
 git@github.com:joel-muller/hslu-chat.git
 git@github.com:joel-muller/hslu-cobau.git
 git@github.com:joel-muller/hslu-cplab.git
