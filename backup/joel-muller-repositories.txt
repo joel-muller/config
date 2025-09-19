@@ -25,6 +25,8 @@ git@github.com:joel-muller/hslu-oop.git
 git@github.com:joel-muller/hslu-pcp-go.git
 git@github.com:joel-muller/hslu-pcp-exercises.git
 git@github.com:joel-muller/hslu-pren-1-doc.git
+git@github.com:joel-muller/hslu-pren-1-img.git
+git@github.com:joel-muller/hslu-pren-1-ufo.git
 git@github.com:joel-muller/hslu-pren-1-digital-twin.git
 git@github.com:joel-muller/hslu-pren-2-doc.git
 git@github.com:joel-muller/hslu-pren-2-llc.git
