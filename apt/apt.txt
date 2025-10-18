@@ -1,0 +1,7 @@
+zsh
+vim
+xsel
+git
+tree
+nvim
+pipx
