@@ -421,6 +421,10 @@ require('lazy').setup({
             'node_modules/',
             'venv/',
             '__pycache__/',
+            'htmlcov/',
+            '.idea/',
+            '.pytest_cache/',
+            '.coverage',
           },
           --   mappings = {
           --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
