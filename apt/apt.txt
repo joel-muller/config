@@ -5,3 +5,5 @@ git
 tree
 nvim
 pipx
+tldr
+cheat

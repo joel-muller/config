@@ -49,5 +49,9 @@ web() {
 }
 
 note() {
-    less ~/notes/ressources/$1.md
+    less ~/notes/ressources/$1.txt
+}
+
+chsh() {
+    curl cheat.sh/$1 | less
 }
