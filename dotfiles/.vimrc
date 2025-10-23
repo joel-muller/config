@@ -11,6 +11,8 @@ nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 nnoremap <C-y> <C-y>k
 nnoremap <C-e> <C-e>j
+nnoremap M O<Esc>
+nnoremap m o<Esc>
 
 noremap H ^
 noremap L $
@@ -18,4 +20,3 @@ noremap L $
 inoremap <C-c> <Esc>
 
 colorscheme default
-
