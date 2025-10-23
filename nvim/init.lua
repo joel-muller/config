@@ -174,6 +174,18 @@ vim.o.confirm = true
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Scroll half-page down and center cursor, Scroll half-page up and center cursor
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- Scroll window one line up, move cursor down/up to compensate
+vim.keymap.set('n', '<C-y>', '<C-y>k')
+vim.keymap.set('n', '<C-e>', '<C-e>j')
+
+-- Faster o and O esc
+vim.keymap.set('n', 'M', 'O<Esc>')
+vim.keymap.set('n', 'm', 'o<Esc>')
+
 -- Move to start/end of line
 vim.keymap.set({ 'n', 'o' }, 'H', '^')
 vim.keymap.set({ 'n', 'o' }, 'L', '$')
