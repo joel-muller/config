@@ -49,7 +49,12 @@ web() {
 }
 
 note() {
-    less ~/notes/ressources/$1.txt
+    less ~/notes/cheat/$1.txt
+}
+
+
+info() {
+    less ~/notes/info/$1.txt
 }
 
 chsh() {
