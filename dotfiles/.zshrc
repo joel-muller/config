@@ -25,10 +25,11 @@ alias paste='xsel --output --clipboard'
 alias l='ls -lha'
 
 # Scripts
-alias baa='sh $HOME/hslu-baa-server/scripts/tmux.sh'
+alias baa='sh $HOME/hslu-baa-server/tmux.sh'
 alias vmdevops="ssh -i .ssh/devopsvmjoel 'labadmin@srv-018.devops.ls.eee.intern'"
 alias wq='sh $HOME/world-quiz/tmux.sh'
 alias wlog='vim $HOME/notes/Work_Log.md'
+alias wjor='vim $HOME/notes/Workjournal.md'
 
 # Created by `pipx` on 2025-10-03 11:17:45
 export PATH="$PATH:/Users/joel/.local/bin"
