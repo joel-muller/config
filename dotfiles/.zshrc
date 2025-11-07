@@ -12,9 +12,10 @@ antigen bundle command-not-found
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle paulirish/git-open
 
 # Load the theme.
-antigen theme clean
+antigen theme candy
 
 # Tell Antigen that you're done.
 antigen apply
@@ -23,10 +24,12 @@ antigen apply
 alias copy='xsel --input --clipboard'
 alias paste='xsel --output --clipboard'
 alias l='ls -lha'
+alias cheat='sh ~/config/cheat.sh'
 
 # Scripts
 alias baa='sh $HOME/hslu-baa-server/tmux.sh'
 alias vmdevops="ssh -i .ssh/devopsvmjoel 'labadmin@srv-018.devops.ls.eee.intern'"
+alias vmdevopstail="ssh -i .ssh/devopsvmjoel 'labadmin@100.107.177.70'"
 alias wq='sh $HOME/world-quiz/tmux.sh'
 alias wlog='vim $HOME/notes/Work_Log.md'
 alias wjor='vim $HOME/notes/Workjournal.md'
@@ -46,18 +49,5 @@ clone() {
 }
 
 web() {
-    zsh ~/config/open/open.zsh $1 | pbcopy
-}
-
-note() {
-    less ~/notes/cheat/$1.txt
-}
-
-
-info() {
-    less ~/notes/info/$1.txt
-}
-
-chsh() {
-    curl cheat.sh/$1 | less
+    zsh ~/config/open.zsh $1 | pbcopy
 }
