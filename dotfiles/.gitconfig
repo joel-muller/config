@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Joel Müller
+	email = joelmueller27@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
