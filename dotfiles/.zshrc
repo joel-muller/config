@@ -15,7 +15,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle paulirish/git-open
 
 # Load the theme.
-antigen theme candy
+antigen theme clean
 
 # Tell Antigen that you're done.
 antigen apply
