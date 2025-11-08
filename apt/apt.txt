@@ -7,3 +7,4 @@ nvim
 pipx
 tldr
 cheat
+fzf
