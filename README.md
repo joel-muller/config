@@ -16,20 +16,8 @@ curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/in
 ssh-keygen -t ed25519
 ```
 
-3. Create `.gitconfig` file and add it into the home directory
-
-```txt
-# This is Git's per-user configuration file.
-[user]
-	name = Joel Müller
-	email = mymailhere
-[init]
-	defaultBranch = main
-[core]
-	editor = vim
-```
-
 3. Clone the repository `config` in to the home directory
+
 4. Go into the `config` directory and link all the dotfiles
 
 ```shell
