@@ -435,7 +435,7 @@ require('lazy').setup({
             '__pycache__/',
             'htmlcov/',
             '.idea/',
-            '.pytest_cache/',
+            '.*_cache/',
             '.coverage',
           },
           --   mappings = {
