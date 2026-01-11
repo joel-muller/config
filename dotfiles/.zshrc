@@ -36,23 +36,10 @@ eval "$(pyenv virtualenv-init -)"
 alias copy='xsel --input --clipboard'
 alias paste='xsel --output --clipboard'
 alias l='ls -lha'
-alias cheat='sh ~/config/cheat.sh'
-
-# Scripts
-alias baa='sh $HOME/hslu-baa-server/tmux.sh'
-alias vmdevops="ssh -i ~/.ssh/devopsvmjoel 'labadmin@srv-018.devops.ls.eee.intern'"
-alias vmdevopstail="ssh -i ~/.ssh/devopsvmjoel 'labadmin@100.107.177.70'"
-alias wq='sh $HOME/world-quiz/tmux.sh'
-alias wlog='vim $HOME/notes/Work_Log.md'
-alias wjor='vim $HOME/notes/Workjournal.md'
 
 # Clone fast for github
 clone() {
     git clone git@github.com:joel-muller/$1.git
-}
-
-web() {
-    zsh ~/config/open.zsh $1 | pbcopy
 }
 
 note() {
