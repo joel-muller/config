@@ -47,3 +47,9 @@ note() {
     file=$(find ~/notes -type f -not -path "*/.git/*" | sed "s|$HOME/notes/||" | fzf)
     [[ -n $file ]] && vim "$HOME/notes/$file"
 }
+
+hist() {
+    local cmd
+    cmd=$(history | tail -n 100 | fzf --reverse --prompt="History> " | sed 's/^[ ]*[0-9]*[ ]*//')
+    [[ -n $cmd ]] && print -z "$cmd"
+}
