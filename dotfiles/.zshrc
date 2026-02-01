@@ -27,10 +27,10 @@ source <(fzf --zsh)
 export PATH="$PATH:/Users/joel/.local/bin"
 
 # For pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-eval "$(pyenv virtualenv-init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init - zsh)"
+#eval "$(pyenv virtualenv-init -)"
 
 # Declare the Aliases
 alias copy='xsel --input --clipboard'
@@ -52,4 +52,16 @@ hist() {
     local cmd
     cmd=$(history | tail -n 100 | fzf --reverse --prompt="History> " | sed 's/^[ ]*[0-9]*[ ]*//')
     [[ -n $cmd ]] && print -z "$cmd"
+}
+
+getf() {
+    local file
+    file=$(find ~/files \( -type l -o -type f \) -not -path "*/.git/*" -not -name '*.DS_Store' | sed "s|$HOME/files/||" | fzf)
+    [[ -n $file ]] && rsync -aL "$HOME/files/$file" "$HOME/Desktop"
+}
+
+getd() {
+    local file
+    file=$(find ~/files -type d -not -path "*/.git/*" | sed "s|$HOME/files/||" | fzf)
+    [[ -n $file ]] && rsync -aL "$HOME/files/$file" "$HOME/Desktop"
 }
