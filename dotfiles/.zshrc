@@ -57,11 +57,11 @@ hist() {
 getf() {
     local file
     file=$(find ~/files \( -type l -o -type f \) -not -path "*/.git/*" -not -name '*.DS_Store' | sed "s|$HOME/files/||" | fzf)
-    [[ -n $file ]] && rsync -aL "$HOME/files/$file" "$HOME/Desktop"
+    [[ -n $file ]] && rsync -avL "$HOME/files/$file" "$HOME/Desktop"
 }
 
 getd() {
     local file
     file=$(find ~/files -type d -not -path "*/.git/*" | sed "s|$HOME/files/||" | fzf)
-    [[ -n $file ]] && rsync -aL "$HOME/files/$file" "$HOME/Desktop"
+    [[ -n $file ]] && rsync -avL "$HOME/files/$file" "$HOME/Desktop"
 }
