@@ -144,6 +144,8 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-b = '''exec-and-forget open -a "Brave Browser"'''
     ctrl-alt-t = '''exec-and-forget open -a "iTerm"'''
     ctrl-alt-w = '''exec-and-forget open -a "WebStorm"'''
+    ctrl-alt-i = '''exec-and-forget open -a "IntelliJ IDEA"'''
+    ctrl-alt-f = '''exec-and-forget open -a "Finder"'''
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
