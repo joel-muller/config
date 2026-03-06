@@ -20,6 +20,9 @@ antigen theme clean
 # Tell Antigen that you're done.
 antigen apply
 
+# Homebrew path apple silicon
+export PATH="/opt/homebrew/bin:$PATH"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
@@ -48,10 +51,10 @@ note() {
     [[ -n $file ]] && vim "$HOME/notes/$file"
 }
 
-hist() {
-    local cmd
-    cmd=$(history | tail -n 100 | fzf --reverse --prompt="History> " | sed 's/^[ ]*[0-9]*[ ]*//')
-    [[ -n $cmd ]] && print -z "$cmd"
+ch() {
+    local file
+    file=$(find ~/cheat/cli -type f -not -path "*/.git/*" | sed "s|$HOME/cheat/cli/||" | sed 's|\.txt$||'| fzf)
+    [[ -n $file ]] && vim "$HOME/cheat/cli/$file.txt"
 }
 
 getf() {
