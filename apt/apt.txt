@@ -8,3 +8,4 @@ pipx
 tldr
 cheat
 fzf
+stow
