@@ -18,29 +18,27 @@ fi
 
 # Installing Antigen
 echo "Installing Antigen"
-curl -L git.io/antigen > $HOME/antigen.zsh
+curl -L git.io/antigen > "$ANTIGEN_PATH"
 
-# Remove links to existing dotfiles
-echo "Remove links to existing dotfiles"
-ls -A $PATH_OF_DOTFILES | xargs -I {} rm -f $HOME/{}
+echo "Linking the dotfiles"
+# Linking the Dotfiles
+rm -f "$HOME/.vimrc"
+rm -f "$HOME/.aerospace.toml"
+rm -f "$HOME/.gitconfig"
+rm -f "$HOME/.neomuttrc"
+rm -f "$HOME/.tmux.conf"
+rm -f "$HOME/.zshrc"
+rm -f "$HOME/.ideavimrc"
 
-# Linking dotfiles
-echo "Linking dotfiles"
-ls -A $PATH_OF_DOTFILES | xargs -I {} ln -nfs $PATH_OF_DOTFILES/{} $HOME/{}
+ln -nfs "$PATH_OF_DOTFILES/.vimrc" "$HOME/.vimrc"
+ln -nfs "$PATH_OF_DOTFILES/.aerospace.toml" "$HOME/.aerospace.toml"
+ln -nfs "$PATH_OF_DOTFILES/.gitconfig" "$HOME/.gitconfig"
+ln -nfs "$PATH_OF_DOTFILES/.neomuttrc" "$HOME/.neomuttrc"
+ln -nfs "$PATH_OF_DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
+ln -nfs "$PATH_OF_DOTFILES/.zshrc" "$HOME/.zshrc"
+ln -nfs "$HOME/.vimrc" "$HOME/.ideavimrc"
 
-# Linking .vimrc dotfile to a new intellij dotfile
-[ -e "$HOME/.ideavimrc" ] && rm "$HOME/.ideavimrc"
-ln -s "$HOME/.vimrc" "$HOME/.ideavimrc"
-
-# Remove .config folder if it already exists and create a new one
-if [ -d "$CONFIG_FOLDER" ]; then
-    echo "Removing existing .config folder"
-    rm -rf "$CONFIG_FOLDER"
-fi
-
-echo "Creating new .config folder"
+# Lining the config folders
 mkdir -p "$CONFIG_FOLDER"
-
-# Copy nvim folder to config folder
-echo "Linking nvim folder to config folder"
-ln -s "$HOME/config/nvim" "$CONFIG_FOLDER"
+rm -rf "$CONFIG_FOLDER/nvim"
+ln -s "$HOME/config/nvim" "$CONFIG_FOLDER/nvim"
