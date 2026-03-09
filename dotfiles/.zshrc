@@ -23,6 +23,10 @@ antigen apply
 # Homebrew path apple silicon
 export PATH="/opt/homebrew/bin:$PATH"
 
+# Add jenv path for multiple java versions
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
