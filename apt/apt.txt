@@ -9,3 +9,5 @@ tldr
 cheat
 fzf
 stow
+pyenv-virtualenv
+pyenv

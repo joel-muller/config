@@ -30,14 +30,14 @@ eval "$(jenv init -)"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# Created by `pipx` on 2025-10-03 11:17:45
+# Add pipx path for global python packages
 export PATH="$PATH:/Users/joel/.local/bin"
 
-# For pyenv
-#export PYENV_ROOT="$HOME/.pyenv"
-#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init - zsh)"
-#eval "$(pyenv virtualenv-init -)"
+# Add Pyenv for multiple python environments
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+eval "$(pyenv virtualenv-init -)"
 
 # Declare the Aliases
 alias copy='xsel --input --clipboard'
