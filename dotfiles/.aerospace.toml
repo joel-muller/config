@@ -147,6 +147,17 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-i = '''exec-and-forget open -a "IntelliJ IDEA"'''
     ctrl-alt-f = '''exec-and-forget open -a "Finder"'''
 
+[workspace-to-monitor-force-assignment]
+    1 = 'main'
+    2 = 'main'
+    3 = 'main'
+    4 = 'main'
+    5 = 'main'
+    6 = 'secondary'
+    7 = 'secondary'
+    8 = 'secondary'
+    9 = 'secondary'
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
