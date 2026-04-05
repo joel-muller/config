@@ -3,7 +3,7 @@ vim
 xsel
 git
 tree
-nvim
+neovim
 pipx
 tldr
 cheat

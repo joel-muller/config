@@ -6,11 +6,19 @@ In this repository is how i configure my computer. Feel free to clone it and mak
 
 1. Install Important Packages
 
+Linux
+
 ```shell
-curl https://raw.githubusercontent.com/joel-muller/config/refs/heads/main/apt/install.sh | sh
+curl https://raw.githubusercontent.com/joel-muller/config/main/packages/apt.sh | sh
 ```
 
-2. Make zsh shell standard shell
+Mac
+
+```shell
+curl https://raw.githubusercontent.com/joel-muller/config/main/packages/brew.sh | sh
+```
+
+2. Make zsh shell standard shell (only linux)
 
 ```shell
 chsh -s $(which zsh)

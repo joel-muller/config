@@ -1,0 +1,14 @@
+vim
+git
+tree
+neovim
+pipx
+tldr
+cheat
+fzf
+stow
+pyenv-virtualenv
+pyenv
+gnupg
+pass
+pass-otp
