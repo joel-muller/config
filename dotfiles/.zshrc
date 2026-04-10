@@ -56,9 +56,15 @@ note() {
 }
 
 ch() {
-    local file
-    file=$(find ~/cheat/cli -type f -not -path "*/.git/*" | sed "s|$HOME/cheat/cli/||" | sed 's|\.txt$||'| fzf)
-    [[ -n $file ]] && vim "$HOME/cheat/cli/$file.txt"
+    if [[ -n $2 && -e "$HOME/cheat/cli/$1/$2.txt" ]]; then
+        vim "$HOME/cheat/cli/$1/$2.txt"
+    elif [[ -n $1 && -z $2 && -e "$HOME/cheat/cli/$1.txt" ]]; then
+        vim "$HOME/cheat/cli/$1.txt"
+    else
+        local file
+        file=$(find ~/cheat/cli -type f -not -path "*/.git/*" | sed "s|$HOME/cheat/cli/||" | sed 's|\.txt$||'| fzf)
+        [[ -n $file ]] && vim "$HOME/cheat/cli/$file.txt"
+    fi
 }
 
 getf() {
