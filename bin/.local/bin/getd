@@ -1,0 +1,7 @@
+getd() {
+    local file
+    file=$(find ~/files -type d -not -path "*/.git/*" | sed "s|$HOME/files/||" | fzf)
+    [[ -n $file ]] && rsync -avL "$HOME/files/$file" "$HOME/Desktop"
+}
+
+getd "$@"

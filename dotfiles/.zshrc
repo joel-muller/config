@@ -20,6 +20,9 @@ antigen theme clean
 # Tell Antigen that you're done.
 antigen apply
 
+# Shellscripts
+export PATH="$HOME/.local/bin:$PATH"
+
 # Homebrew path apple silicon
 export PATH="/opt/homebrew/bin:$PATH"
 
@@ -43,38 +46,3 @@ eval "$(pyenv virtualenv-init -)"
 alias copy='xsel --input --clipboard'
 alias paste='xsel --output --clipboard'
 alias l='ls -lha'
-
-# Clone fast for github
-clone() {
-    git clone git@github.com:joel-muller/$1.git
-}
-
-note() {
-    local file
-    file=$(find ~/notes -type f -not -path "*/.git/*" | sed "s|$HOME/notes/||" | fzf)
-    [[ -n $file ]] && vim "$HOME/notes/$file"
-}
-
-ch() {
-    if [[ -n $2 && -e "$HOME/cheat/cli/$1/$2.txt" ]]; then
-        vim "$HOME/cheat/cli/$1/$2.txt"
-    elif [[ -n $1 && -z $2 && -e "$HOME/cheat/cli/$1.txt" ]]; then
-        vim "$HOME/cheat/cli/$1.txt"
-    else
-        local file
-        file=$(find ~/cheat/cli -type f -not -path "*/.git/*" | sed "s|$HOME/cheat/cli/||" | sed 's|\.txt$||'| fzf)
-        [[ -n $file ]] && vim "$HOME/cheat/cli/$file.txt"
-    fi
-}
-
-getf() {
-    local file
-    file=$(find ~/files \( -type l -o -type f \) -not -path "*/.git/*" -not -name '*.DS_Store' | sed "s|$HOME/files/||" | fzf)
-    [[ -n $file ]] && rsync -avL "$HOME/files/$file" "$HOME/Desktop"
-}
-
-getd() {
-    local file
-    file=$(find ~/files -type d -not -path "*/.git/*" | sed "s|$HOME/files/||" | fzf)
-    [[ -n $file ]] && rsync -avL "$HOME/files/$file" "$HOME/Desktop"
-}

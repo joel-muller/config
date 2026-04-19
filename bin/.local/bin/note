@@ -1,0 +1,7 @@
+note() {
+    local file
+    file=$(find ~/notes -type f -not -path "*/.git/*" | sed "s|$HOME/notes/||" | fzf)
+    [[ -n $file ]] && vim "$HOME/notes/$file"
+}
+
+note "$@"
