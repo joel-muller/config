@@ -1,7 +1,8 @@
 background = 101010
-foreground = cccccc
+foreground = eeeeee
 font-size = 18
 font-family = Courier New Bold
+theme = Catppuccin Frappe
 
 shell-integration-features = no-cursor
 cursor-style = block

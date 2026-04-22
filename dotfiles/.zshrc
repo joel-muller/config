@@ -34,7 +34,11 @@ eval "$(jenv init -)"
 source <(fzf --zsh)
 
 # Add pipx path for global python packages
-export PATH="$PATH:/Users/joel/.local/bin"
+export PATH="$HOME/.local/bin:$PATH"
+
+# Add bin scripts to the path
+export PATH="$HOME/config/bin:$PATH"
+export PATH="$HOME/notes/scripts:$PATH"
 
 # Add Pyenv for multiple python environments
 export PYENV_ROOT="$HOME/.pyenv"
