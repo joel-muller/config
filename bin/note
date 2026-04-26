@@ -1,6 +1,6 @@
 note() {
     local file
-    file=$(find ~/notes -type f -not -path "*/.git/*" | sed "s|$HOME/notes/||" | fzf)
+    file=$(find ~/notes -type f -not -path "*/.git/*" | sed "s|$HOME/notes/||" | fzf --preview 'cat ~/notes/{}' --preview-window=right:70%:wrap)
     [[ -n $file ]] && vim "$HOME/notes/$file"
 }
 
