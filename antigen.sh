@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ANTIGEN_PATH=$HOME/antigen.zsh
 ANTIGEN_REPO=$HOME/.antigen
 

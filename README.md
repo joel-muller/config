@@ -2,35 +2,27 @@
 
 In this repository is how i configure my computer. Feel free to clone it and make it your own.
 
-## Prequisites
+## Installation
 
-On Linux, make sure you have curl installed, if not install it:
+Clone the Repository and install the required packages. You can also delete or add packages in `packages/brew.txt`, `packages/cask.txt` or `packages/apt.txt`.
 
-```shell
-sudo apt install curl
+```bash
+sh install.sh
 ```
 
-Generate ssh-keypair and add the public key to github account
+## Install Antigen 
 
-```shell
-ssh-keygen -t ed25519
+```bash
+sh antigen.sh
 ```
 
-## Install Packages
+> [!NOTE]
+> If `zsh` is not your default shell (check with `echo $SHELL`), install it and set it as your default with `chsh -s "$(which zsh)"`.
+> After changing your default shell, you may need to restart your computer for the change to take effect.
 
-```shell
-curl https://raw.githubusercontent.com/joel-muller/config/main/install/install.sh | sh
-```
+## Link the Dotfiles with stow
 
-## Install Antigen
-
-```shell
-curl https://raw.githubusercontent.com/joel-muller/config/main/install/antigen.sh | sh
-```
-
-## Clone the Repository and Link the Dotfiles
-
-```shell
+```bash
 stow dotfiles
 stow gitconfig
 ```
