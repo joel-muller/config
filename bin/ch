@@ -1,14 +1,18 @@
-# for opening the cheatsheet fast
-ch() {
-    if [[ -n $2 && -e "$HOME/cheat/cli/$1/$2.txt" ]]; then
-        vim "$HOME/cheat/cli/$1/$2.txt"
-    elif [[ -n $1 && -z $2 && -e "$HOME/cheat/cli/$1.txt" ]]; then
-        vim "$HOME/cheat/cli/$1.txt"
-    else
-        local file
-        file=$(find ~/cheat/cli -type f -not -path "*/.git/*" | sed "s|$HOME/cheat/cli/||" | sed 's|\.txt$||'| fzf --preview 'cat ~/cheat/cli/{}.txt' --preview-window=right:70%:wrap)
-        [[ -n $file ]] && vim "$HOME/cheat/cli/$file.txt"
-    fi
-}
+#!/bin/bash
 
-ch "$@"
+REPO="$HOME/cheat/cli"
+
+if [[ -n $2 && -e "$REPO/$1/$2.txt" ]]; then
+    vim "$REPO/$1/$2.txt"
+elif [[ -n $1 && -z $2 && -e "$REPO/$1.txt" ]]; then
+    vim "$REPO/$1.txt"
+else
+    file=$(
+        find "$REPO" -type f -not -path "*/.git/*" |
+        sed "s|$REPO/||" |
+        sed 's|\.txt$||' |
+        fzf --preview "cat $REPO/{}.txt" --preview-window=right:70%:wrap
+    )
+
+    [[ -n $file ]] && vim "$REPO/$file.txt"
+fi

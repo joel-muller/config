@@ -1,6 +1,3 @@
-# Clone fast for github
-clone() {
-    git clone git@github.com:joel-muller/$1.git
-}
+#!/bin/bash
 
-clone "$@"
+git clone git@github.com:joel-muller/$1.git
