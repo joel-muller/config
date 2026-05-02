@@ -1,4 +1,9 @@
-source $HOME/antigen.zsh
+# Check if command is available
+has() {
+  command -v "$1" >/dev/null 2>&1
+}
+
+source "$HOME/antigen.zsh"
 
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
@@ -28,10 +33,10 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # Add jenv path for multiple java versions
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+has jenv && eval "$(jenv init -)"
 
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+has fzf && source <(fzf --zsh)
 
 # Add bin scripts to the path
 export PATH="$HOME/config/bin:$PATH"
@@ -39,11 +44,11 @@ export PATH="$HOME/notes/scripts:$PATH"
 
 # Add Pyenv for multiple python environments
 export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-eval "$(pyenv virtualenv-init -)"
+[[ -d "$PYENV_ROOT/bin" ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+has pyenv && eval "$(pyenv init - zsh)"
+has pyenv && eval "$(pyenv virtualenv-init -)"
 
 # Declare the Aliases
-alias copy='xsel --input --clipboard'
-alias paste='xsel --output --clipboard'
+has xsel && alias copy='xsel --input --clipboard'
+has xsel && alias paste='xsel --output --clipboard'
 alias l='ls -lha'
