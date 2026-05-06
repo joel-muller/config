@@ -20,3 +20,6 @@ noremap L $
 inoremap <C-c> <Esc>
 
 colorscheme default
+
+nnoremap <Space>sf :action GotoFile<CR>
+nnoremap <Space>sg :action SearchEverywhere<CR>
