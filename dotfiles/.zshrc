@@ -25,33 +25,33 @@ antigen theme clean
 # Tell Antigen that you're done.
 antigen apply
 
-# Shellscripts
+# Local user binaries
 export PATH="$HOME/.local/bin:$PATH"
 
-# Homebrew path apple silicon
+# Homebrew path (Apple Silicon)
 export PATH="/opt/homebrew/bin:$PATH"
 
-# Add jenv path for multiple java versions
+# jenv for managing Java versions
 export PATH="$HOME/.jenv/bin:$PATH"
 has jenv && eval "$(jenv init -)"
 
-# Set up fzf key bindings and fuzzy completion
+# fzf key bindings and completion
 has fzf && source <(fzf --zsh)
 
-# Add bin scripts to the path
+# Personal scripts
 export PATH="$HOME/config/bin:$PATH"
 export PATH="$HOME/notes/scripts:$PATH"
 
-# Add fnm node version manager
+# fnm for Node.js versions
 has fnm && eval "$(fnm env --use-on-cd --shell zsh)"
 
-# Add Pyenv for multiple python environments
+# pyenv for Python versions and virtualenvs
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d "$PYENV_ROOT/bin" ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 has pyenv && eval "$(pyenv init - zsh)"
 has pyenv && eval "$(pyenv virtualenv-init -)"
 
-# Declare the Aliases
+# Shell aliases
 has xsel && alias copy='xsel --input --clipboard'
 has xsel && alias paste='xsel --output --clipboard'
 alias l='ls -lha'
