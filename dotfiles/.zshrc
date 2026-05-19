@@ -42,6 +42,9 @@ has fzf && source <(fzf --zsh)
 export PATH="$HOME/config/bin:$PATH"
 export PATH="$HOME/notes/scripts:$PATH"
 
+# Add fnm node version manager
+has fnm && eval "$(fnm env --use-on-cd --shell zsh)"
+
 # Add Pyenv for multiple python environments
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d "$PYENV_ROOT/bin" ]] && export PATH="$PYENV_ROOT/bin:$PATH"
