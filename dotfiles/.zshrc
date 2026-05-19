@@ -28,6 +28,10 @@ antigen apply
 # Local user binaries
 export PATH="$HOME/.local/bin:$PATH"
 
+# Personal scripts
+export PATH="$HOME/config/bin:$PATH"
+export PATH="$HOME/notes/scripts:$PATH"
+
 # Homebrew path (Apple Silicon)
 export PATH="/opt/homebrew/bin:$PATH"
 
@@ -37,10 +41,6 @@ has jenv && eval "$(jenv init -)"
 
 # fzf key bindings and completion
 has fzf && source <(fzf --zsh)
-
-# Personal scripts
-export PATH="$HOME/config/bin:$PATH"
-export PATH="$HOME/notes/scripts:$PATH"
 
 # fnm for Node.js versions
 has fnm && eval "$(fnm env --use-on-cd --shell zsh)"
