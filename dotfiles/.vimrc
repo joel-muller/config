@@ -1,25 +1,28 @@
 syntax on
 
+colorscheme default
+
+let mapleader=" "
+
 set relativenumber
 set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set clipboard=unnamed
+set ignorecase
+set smartcase
+set hlsearch
 
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
-nnoremap <C-y> <C-y>k
-nnoremap <C-e> <C-e>j
-nnoremap M O<Esc>
-nnoremap m o<Esc>
 
-noremap H ^
-noremap L $
+nnoremap H ^
+nnoremap L $
 
 inoremap <C-c> <Esc>
 
-colorscheme default
-
-nnoremap <Space>sf :action GotoFile<CR>
-nnoremap <Space>sg :action SearchEverywhere<CR>
+nnoremap <leader>sf :action GotoFile<CR>
+nnoremap <leader>sg :action SearchEverywhere<CR>
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gr :action FindUsages<CR>
