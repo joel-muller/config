@@ -1,6 +1,7 @@
 git
 tree
 neovim
+tree-sitter-cli
 pipx
 tldr
 cheat
