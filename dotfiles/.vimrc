@@ -12,6 +12,7 @@ set expandtab
 set ignorecase
 set smartcase
 set hlsearch
+set clipboard=unnamed,unnamedplus
 
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
@@ -23,6 +24,7 @@ inoremap <C-c> <Esc>
 
 nnoremap <leader>sf :action GotoFile<CR>
 nnoremap <leader>sg :action SearchEverywhere<CR>
-nnoremap <leader>rn :action RenameElement<CR>
-nnoremap gd :action GotoDeclaration<CR>
-nnoremap gr :action FindUsages<CR>
+
+nnoremap grn :action RenameElement<CR>
+nnoremap grd :action GotoDeclaration<CR>
+nnoremap grr :action FindUsages<CR>
