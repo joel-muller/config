@@ -179,6 +179,14 @@ do
   --  See `:help hlsearch`
   vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+  vim.keymap.set({ 'n', 'o', 'v' }, '<C-d>', '<C-d>zz')
+  vim.keymap.set({ 'n', 'o', 'v' }, '<C-u>', '<C-u>zz')
+
+  vim.keymap.set({ 'n', 'o', 'v' }, 'H', '^')
+  vim.keymap.set({ 'n', 'o', 'v' }, 'L', '$')
+
+  vim.keymap.set('i', '<C-c>', '<Esc>')
+
   -- Diagnostic Config & Keymaps
   --  See `:help vim.diagnostic.Opts`
   vim.diagnostic.config {
