@@ -14,11 +14,11 @@ set smartcase
 set hlsearch
 set clipboard=unnamed,unnamedplus
 
-nnoremap <C-d> <C-d>zz
-nnoremap <C-u> <C-u>zz
+noremap <C-d> <C-d>zz
+noremap <C-u> <C-u>zz
 
-nnoremap H ^
-nnoremap L $
+noremap H ^
+noremap L $
 
 inoremap <C-c> <Esc>
 
