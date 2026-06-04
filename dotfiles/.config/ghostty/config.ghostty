@@ -1,6 +1,6 @@
 background = 101010
 foreground = eeeeee
-font-size = 18
+font-size = 16
 font-family = Courier New Bold
 theme = Catppuccin Frappe
 
