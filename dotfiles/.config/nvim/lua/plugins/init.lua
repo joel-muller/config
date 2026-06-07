@@ -15,4 +15,5 @@ require("lazy").setup({
 	{ import = "plugins.telescope" },
 	{ import = "plugins.gitsigns" },
 	{ import = "plugins.lsp" },
+	{ import = "plugins.completions" },
 })
