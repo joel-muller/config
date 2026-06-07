@@ -9,4 +9,4 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.hlsearch = true
 opt.clipboard = "unnamed,unnamedplus"
-opt.guicursor = 'a:block'
+opt.guicursor = "a:block"
