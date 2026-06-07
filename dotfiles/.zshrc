@@ -54,4 +54,6 @@ has pyenv && eval "$(pyenv virtualenv-init -)"
 # Shell aliases
 has xsel && alias copy='xsel --input --clipboard'
 has xsel && alias paste='xsel --output --clipboard'
+has pbcopy && alias copy='pbcopy'
+has pbpaste && alias paste='pbpaste'
 alias l='ls -lha'
