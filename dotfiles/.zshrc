@@ -3,6 +3,16 @@ has() {
   command -v "$1" >/dev/null 2>&1
 }
 
+# Check if system is macOS
+is_mac() {
+  [ "$(uname -s)" = "Darwin" ]
+}
+
+# Check if system is Linux
+is_linux() {
+  [ "$(uname -s)" = "Linux" ]
+}
+
 source "$HOME/antigen.zsh"
 
 # Load the oh-my-zsh's library
@@ -52,8 +62,8 @@ has pyenv && eval "$(pyenv init - zsh)"
 has pyenv && eval "$(pyenv virtualenv-init -)"
 
 # Shell aliases
-has xsel && alias copy='xsel --input --clipboard'
-has xsel && alias paste='xsel --output --clipboard'
-has pbcopy && alias copy='pbcopy'
-has pbpaste && alias paste='pbpaste'
+is_linux && has xsel && alias copy='xsel --input --clipboard'
+is_linux && has xsel && alias paste='xsel --output --clipboard'
+is_mac && has pbcopy && alias copy='pbcopy'
+is_mac && has pbpaste && alias paste='pbpaste'
 alias l='ls -lha'
