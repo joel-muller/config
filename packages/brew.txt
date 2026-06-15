@@ -2,6 +2,7 @@ git
 tree
 neovim
 tree-sitter-cli
+ripgrep
 pipx
 tldr
 cheat
