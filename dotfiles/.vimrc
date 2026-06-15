@@ -12,6 +12,7 @@ set expandtab
 set ignorecase
 set smartcase
 set hlsearch
+set incsearch
 set clipboard=unnamed,unnamedplus
 
 noremap <C-d> <C-d>zz
