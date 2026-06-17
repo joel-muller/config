@@ -40,7 +40,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Personal scripts
 export PATH="$HOME/config/bin:$PATH"
-export PATH="$HOME/notes/scripts:$PATH"
+export PATH="$HOME/notes/bin:$PATH"
 
 # Homebrew path (Apple Silicon)
 export PATH="/opt/homebrew/bin:$PATH"
